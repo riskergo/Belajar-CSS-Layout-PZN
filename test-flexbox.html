@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            border: 3px solid black;
+            border-radius: 15px;
+        }
+
+        .content {
+            display: flex;
+            width: 100%;
+            height: 350px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .sidebar {
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            /* align-items: center; */
+            /* border: 2px solid black; */
+            padding: 4px;
+            /* margin: 5px; */
+            box-sizing: border-box;
+        }
+
+        .sidebar .aside{
+            background-color: wheat;
+            box-sizing: border-box;
+            padding: 10px;
+            /* width: 280px; */
+            border-radius: 15px;
+        }
+        
+        main {
+            border-radius: 15px;
+            box-sizing: border-box;
+            background-color: wheat;
+            margin: 9px 4px 9px 4px;
+            padding: 20px;
+            width: 65%;
+        }
+    </style>
+</head>
+    <div class="container">
+        <div class="content">
+            <div class="sidebar">
+                <div class="aside">
+                    <h1>koree</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, eaque!</p>
+                </div>
+                <div class="aside">
+                    <h1>koree</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, eaque!</p>
+                </div>
+            </div>
+            <main>
+                <h1>koree</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, tempora.</p>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
