@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Basis</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            display: flex;
+            padding: 20px;
+        }
+
+        .content {
+            background-color: aqua;
+            margin: 5px;
+            padding: 20px;
+        }
+
+        /* berbeda dengan grow, flex shrink, semakin besar angkanya, maka akan semakin menyusut/mengecil */
+        /* erat kaitannya dengan flex shrink */        
+        .content1 {
+            flex-basis: 300px;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content content1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa accusamus quia et adipisci harum quis eos deserunt alias commodi, corporis, dignissimos aut veritatis temporibus. Veniam quis maiores architecto ducimus necessitatibus.</div>
+        <div class="content content2">Ex sint vitae, aspernatur modi recusandae officia atque inventore velit vero soluta sit accusamus illo cum, magni facilis autem quam deserunt quis dignissimos minus quas harum dolor? Repellat, quis ab?</div>
+        <div class="content content3">Dolores, sed aut rem autem officia culpa exercitationem commodi vero error eius velit nobis voluptas, eligendi perferendis quo quae. Repudiandae deleniti voluptatum laboriosam repellendus accusantium aliquid vero suscipit quae veniam.</div>
+        
+    </div>
+</body>
+
+</html>
