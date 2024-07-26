@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLex Grow</title>
+    <style>
+        .container {
+            display: flex;
+            border: 2px solid black;
+            padding: 20px;
+        }
+
+        .content {
+            background-color: aqua;
+            margin: 5px;
+            box-sizing: border-box;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .small {
+            flex-grow: 1;
+        }
+
+        .large {
+            flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content small">A</div>
+        <div class="content large">B</div>
+        <div class="content small">C</div>
+        <div class="content large">D</div>
+        <div class="content small">E</div>
+    </div>
+</body>
+</html>
