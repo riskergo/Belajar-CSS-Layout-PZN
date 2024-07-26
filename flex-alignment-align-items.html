@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Align Items</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: #ddd;
+            height: 500px;
+            /* default-nya adalah stretch */
+            align-items: center;
+        }
+
+        .content {
+            align-items: baseline;
+            margin: 10px;
+            padding: 5px;
+            border: 2px solid black;
+            /* height: 300px; */
+            width: 200px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>konten 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic maxime odio aperiam facere voluptates, reiciendis itaque veritatis debitis quis totam ipsa quod in, quas dolore, nisi porro ullam fugit.</p>
+        </div>
+        <div class="content">
+            <h1>konten 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic maxime odio aperiam facere voluptates, reiciendis itaque veritatis debitis quis totam ipsa quod in, quas dolore, nisi porro ullam fugit.</p>
+        </div>
+        <div class="content">
+            <h1>konten 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic maxime odio aperiam facere voluptates, reiciendis itaque veritatis debitis quis totam ipsa quod in, quas dolore, nisi porro ullam fugit.</p>
+        </div>
+    </div>
+</body>
+</html>
