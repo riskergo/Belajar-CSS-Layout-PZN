@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Align Items</title>
+    <style>
+
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            background-color: #ddd;
+            height: 410px;
+            /* default-nya adalah stretch */
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        .content {
+            height: 300px;
+            display: flex;
+            border-radius: 15px;
+            background-color: aqua;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+
+        .email, .password, .phone-number {
+            padding: 20px;
+            font-size: 18pt;
+            text-align: center;
+            margin-top: -7px;
+        }
+
+        input {
+            width: 100%;
+            font-size: 14pt;
+            text-align: center;
+            height: 30px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        button {
+            margin-top: 20px;
+            font-size: 18pt;
+            border: none;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: white;
+            cursor: pointer;
+        }
+
+        button:active{
+            background-color: black;
+        }
+
+        label {
+            display: inline-block;
+            margin-bottom: 7px;
+        }        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+        <div class="content">
+            <div class="email">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="korasokea@aoskd.com">
+            </div>
+            <div class="password">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="require Uppercase lowercase and symbol">
+            </div>
+            <div class="phone-number">
+                <label for="phone-number">Phone Number</label>
+                <input type="tel" name="phone-number" id="phone-number" pattern="(62)[0-9]{10,11}" placeholder="62123459684">
+            </div>
+        </div>
+        <button>SEND</button>
+        </form>
+    </div>
+</body>
+</html>
