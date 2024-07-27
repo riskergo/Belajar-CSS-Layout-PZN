@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Flexbox 2</title>
+    <style>
+        .container {
+            background-color: #ddd;
+            padding: 20px;
+            box-sizing: border-box;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            column-gap: 20px;
+            justify-content: space-evenly;
+        }
+
+        .content {
+            background-color: wheat;
+            width: 200px;
+            height: 200px;
+            box-sizing: border-box;
+            padding: 10px;
+            text-align: justify;
+            border-radius: 15px;
+            box-shadow: 0 0 3px black;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .tiga {
+            width: 450px;
+            height: 419px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content satu">
+            <h1>Konten 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ut.</p>
+        </div>
+        <div class="content dua">
+            <h1>Konten 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ut.</p>
+        </div>
+        <div class="content tiga">
+            <h1>Konten 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ut. Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+</body>
+</html>
