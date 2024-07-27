@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Auto Columns | Rows for implicit content from database/API</title>
+    <style>
+        .container {
+            width: 610px;
+            display: grid;
+            background-color: #ddd;
+
+            /* menetapkan flow grid */
+            grid-auto-flow: column;
+            
+            /* menetapkan 1 kolom yang eksplisit */
+            grid-template-columns: 250px;
+
+            /* menetapkan sisa kolom implisit */
+            grid-auto-columns: auto;
+
+            /* agar turun dahulu dan tidak bablas ke kanan melebihi ukuran kontainer */
+            /* gunakan grid template rows */
+            grid-template-rows: repeat(2, 400px);
+
+        }
+
+        .content {
+            background-color: lightcyan;
+            border: 2px solid black;
+            margin: 10px;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Kontent 1 kolom eksplisit, row eksplisit</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, laboriosam.</p>
+        </div>
+        <div class="content">
+            <h1>Kontent 2 kolom eksplisit, row eksplisit</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, laboriosam.</p>
+        </div>
+        <div class="content">
+            <h1>Kontent 3 kolom implisit, row eksplisit</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, laboriosam.</p>
+        </div>
+        <!-- implicit content just example, from DATABASE -->
+         <div class="content">
+            <h1>Kontent 4 kolom implisit, row eksplisit</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, laboriosam.</p>
+        </div>
+        <div class="content">
+            <h1>Kontent 5 kolom implisit, row eksplisit</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, laboriosam.</p>
+        </div>
+    </div>
+</body>
+</html>
