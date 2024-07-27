@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Auto Columns | Rows for implicit content from database/API</title>
+    <style>
+        .container {
+            width: 700px;
+            display: grid;
+            background-color: #ddd;
+
+            /* menetapkan flow grid */
+            grid-auto-flow: column;
+
+            /* membuat 2 kolom (eksplisit) */
+            grid-template-columns: 200px 200px;
+
+            /* menetapkan implisit column*/
+            grid-auto-columns: 270px;
+            
+            /* test eksplisit row */
+            grid-template-rows: 250px 300px;
+        }
+
+        .content {
+            background-color: lightcyan;
+            border: 2px solid black;
+            margin: 10px;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Kontent 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, laboriosam.</p>
+        </div>
+        <div class="content">
+            <h1>Kontent 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, laboriosam.</p>
+        </div>
+        <div class="content">
+            <h1>Kontent 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, laboriosam.</p>
+        </div>
+        <!-- implicit content just example, from DATABASE -->
+         <div class="content">
+            <h1>Kontent 4</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, laboriosam.</p>
+        </div>
+        <div class="content">
+            <h1>Kontent 5</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, laboriosam.</p>
+        </div>
+    </div>
+</body>
+</html>
