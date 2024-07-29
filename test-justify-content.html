@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Justify Content</title>
+    <style>
+        .container-utama {
+            margin: 50px auto;
+            width: 1000px;
+            background-color: #ddd;
+            height: 500px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        
+        .container-satu {
+            display: grid;
+            grid-template-columns: repeat(3, 200px);
+            width: 800px;
+            height: 400px;
+            background-color: wheat;
+            gap: 5px;
+            box-sizing: border-box;
+            padding: 10px;
+            place-content: space-evenly;
+        }
+
+        .konten {
+            height: 50px;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20pt;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-utama">
+        <div class="container-satu">
+            <div class="konten">1</div>
+            <div class="konten">2</div>
+            <div class="konten">3</div>
+            <div class="konten">4</div>
+            <div class="konten">5</div>
+            <div class="konten">6</div>
+            <div class="konten">7</div>
+            <div class="konten">8</div>
+            <div class="konten">9</div>
+        </div>
+    </div>
+</body>
+</html>
