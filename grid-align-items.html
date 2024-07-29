@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Justify Items</title>
+    <style>
+        .container {
+            height: 500px;
+            background-color: #ddd;
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-template-rows: repeat(3, 100px);
+            /* versi vertikalnya dari justify-items */
+            align-items: flex-end;
+        }
+
+        .konten {
+            background-color: wheat;
+            border: 1px solid black;
+            font-size: 22pt;
+            padding: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="konten">1</div>
+        <div class="konten">2</div>
+        <div class="konten">3</div>
+        <div class="konten">4</div>
+        <div class="konten">5</div>
+        <div class="konten">6</div>
+        <div class="konten">7</div>
+        <div class="konten">8</div>
+        <div class="konten">9</div>
+    </div>
+</body>
+</html>
