@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subgrid</title>
+    <style>
+        /* cara manual tapi ribet karena */
+        /* apabila parent containernya diatur, maka subgrid harus disesuaikan juga */
+            /* .container {
+                background-color: #ddd;
+                height: 450px;
+                width: 450px;
+                display: grid;
+                ini diatur maka :
+                grid-template-columns: 100px 100px 50px 100px 100px;
+                grid-template-rows: 100px 100px 50px 100px 100px;
+            }
+            
+            .content1 {
+                background-color: lightcoral;
+                atur penempatan sesuai line
+                grid-column: 2 / 5;
+                grid-row: 2 / 5;
+                display: grid;
+                ini juga harus disesuaikan dengan parent-nya
+                grid-template-columns: 100px 50px 100px;
+                grid-template-rows: 100px 50px 100px;
+            }
+
+            .inner {
+                background-color: lightblue;
+                margin: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            } */
+
+
+        /* dengan value subgrid pada property child-nya, maka akan menyesuaikan terhadap parent-nya */
+        .container {
+            background-color: #ddd;
+            height: 500px;
+            width: 500px;
+            display: grid;
+            /* ini diatur maka : */
+            grid-template-columns: 100px 100px 70px 100px 100px;
+            grid-template-rows: 100px 100px 70px 100px 100px;
+        }
+        
+        .content1 {
+            background-color: lightcoral;
+            /* atur penempatan sesuai line */
+            grid-column: 2 / 5;
+            grid-row: 2 / 5;
+            display: grid;
+
+            /* ini tidak perlu diatur karena valuenya adalah subgrid */
+            /* ini akan menyesuaikan dengan otomatis terhadap parent-nya */
+            grid-template-columns: subgrid;
+            grid-template-rows: subgrid;
+        }
+
+        .inner {
+            background-color: lightblue;
+            margin: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content1">
+            <div class="inner"><span>1</span></div>
+            <div class="inner"><span>2</span></div>
+            <div class="inner"><span>3</span></div>
+            <div class="inner"><span>4</span></div>
+            <div class="inner"><span>5</span></div>
+            <div class="inner"><span>6</span></div>
+            <div class="inner"><span>7</span></div>
+            <div class="inner"><span>8</span></div>
+            <div class="inner"><span>9</span></div>
+        </div>
+    </div>
+</body>
+</html>
