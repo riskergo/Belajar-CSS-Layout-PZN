@@ -1,0 +1,11 @@
+.container {
+    background-color: #ddd;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.content {
+    background-color: lightpink;
+    /* text-align: justify; */
+}
