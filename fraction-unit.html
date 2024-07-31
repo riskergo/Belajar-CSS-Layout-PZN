@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraction Unit</title>
+    <style>
+        .container {
+            background-color: lightcyan;
+            display: grid;
+            /* fr adalah fraction, ia akan menghitung nilai sisa ruang dari. */
+            /* bagian yang sudah fixed, di sini contohnya adalah sidebar */
+            grid-template-columns: 200px 1fr 2fr 1fr 2fr;
+            column-gap: 5px;
+        }
+
+        .sidebar {
+            background-color: lightcoral;
+        }
+
+        .content {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>BAMOds</h1>
+        </div>
+        <div class="content">content</div>
+        <div class="content">content</div>
+        <div class="content">content</div>
+        <div class="content">content</div>
+    </div>
+</body>
+</html>
